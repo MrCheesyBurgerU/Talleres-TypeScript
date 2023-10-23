@@ -8,7 +8,7 @@ series.forEach(function (serie) {
 function showSerie(serie) {
     var tableBody = document.createElement("tbody");
     tableBody.innerHTML =
-        "<tr>\n        <th scope=\"row\" style=\"text-align: center;\">".concat(serie.id, "</th>\n        <td style=\"text-align: center;\">").concat(serie.name, "</td>\n        <td style=\"text-align: center;\">").concat(serie.channel, "</td>\n        <td style=\"text-align: center;\">").concat(serie.seasons, "</td>\n    </tr>");
+        "<tr>\n        <th scope=\"row\"\">".concat(serie.id, "</th>\n        <td style= \"color: blue;\">").concat(serie.name, "</td>\n        <td>").concat(serie.channel, "</td>\n        <td>").concat(serie.seasons, "</td>\n    </tr>");
     seriesTable.appendChild(tableBody);
 }
 var averga = document.getElementById("average");

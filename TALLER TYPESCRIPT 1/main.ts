@@ -14,10 +14,10 @@ function showSerie(serie: Serie):void{
     let tableBody = document.createElement("tbody");
     tableBody.innerHTML = 
     `<tr>
-        <th scope="row" style="text-align: center;">${serie.id}</th>
-        <td style="text-align: center;">${serie.name}</td>
-        <td style="text-align: center;">${serie.channel}</td>
-        <td style="text-align: center;">${serie.seasons}</td>
+        <th scope="row"">${serie.id}</th>
+        <td style= "color: blue;">${serie.name}</td>
+        <td>${serie.channel}</td>
+        <td>${serie.seasons}</td>
     </tr>`
     seriesTable.appendChild(tableBody);
 }

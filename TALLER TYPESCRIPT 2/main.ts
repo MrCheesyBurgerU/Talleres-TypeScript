@@ -11,15 +11,15 @@ series.forEach(serie => {
 });
 
 function showSerie(serie: Serie):void{
-    let tableBody = document.createElement("tbody");
-    tableBody.innerHTML = 
-    `<tr>
-        <th scope="row" style="text-align: center;">${serie.id}</th>
-        <td style="text-align: center;">${serie.name}</td>
-        <td style="text-align: center;">${serie.channel}</td>
-        <td style="text-align: center;">${serie.seasons}</td>
-    </tr>`
-    seriesTable.appendChild(tableBody);
+  let tableBody = document.createElement("tbody");
+  tableBody.innerHTML = 
+  `<tr>
+      <th scope="row"">${serie.id}</th>
+      <td style= "color: blue;">${serie.name}</td>
+      <td>${serie.channel}</td>
+      <td>${serie.seasons}</td>
+  </tr>`
+  seriesTable.appendChild(tableBody);
 }
 
 let averga: HTMLElement = document.getElementById("average")!;
@@ -59,9 +59,9 @@ function buildCard(serie: any) {
     > 
   <div class="card-body">
     <p class="card-text" style="text-align: center;">
-        <h1>
+        <h3>
             ${serie.name}
-        </h1>
+        </h3>
     </p>
     <p class="card-text" style="text-align: justify;">
         ${serie.description}
